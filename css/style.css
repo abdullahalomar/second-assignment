@@ -51,6 +51,14 @@ body {
     color: white;
 }
 
+.camera:hover {
+    transform: rotate(360deg);
+}
+
+.camera {
+    transition: transform 5s;
+}
+
 /* first content end */
 
 /* collection content start */
@@ -70,7 +78,7 @@ body {
 }
 
 .collection {
-    height: 485px;
+    height: 450px;
     width: 315px;
     padding-top: 15px;
     padding-right: 1px;
@@ -79,16 +87,23 @@ body {
     box-shadow: 10px 10px 30px gray;
 }
 
+.coll-banner {
+    margin-bottom: 15px;
+}
+
 .coll-title {
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .coll-amount {
     font-size: 25px;
+    margin-bottom: 14px;
 }
 
 .coll-rating {
     display: flex;
+    margin-bottom: 10px;
 }
 
 span {
