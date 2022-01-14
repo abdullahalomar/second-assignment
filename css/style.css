@@ -126,6 +126,19 @@ span {
 
 /* collection content end */
 
+/* extarnal content start */
+.bat {
+    margin-bottom: 90px;
+    transition: transform 1s;
+}
+
+.bat:hover {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+
+/* extarnal content end */
+
 /* footer start */
 
 .foot {
