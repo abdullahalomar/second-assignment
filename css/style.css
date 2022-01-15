@@ -9,6 +9,7 @@ body {
 
 /* navbar start */
 .active {
+    font-family: 'Balsamiq Sans', cursive;
     margin-left: 117px;
     color: #3A3A3A;
     text-decoration: none;
@@ -124,6 +125,10 @@ span {
     margin-bottom: 40px;
 }
 
+.see-button {
+    text-decoration: none;
+}
+
 /* collection content end */
 
 /* extarnal content start */
@@ -180,3 +185,88 @@ span {
 }
 
 /* footer end */
+
+/* media queries start */
+
+/* mobile device */
+
+@media only screen and (max-width:688px) {
+    .active {
+        width: 100%;
+        margin-left: -100px;
+        font-size: 20px;
+    }
+
+    .container {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+
+    }
+
+    .topnav {
+        text-align: center;
+    }
+
+    .head-one {
+        margin-left: 60px;
+        font-size: 25px;
+    }
+
+    .paragraph {
+        margin-left: 60px;
+    }
+
+    .button {
+        margin-left: 60px;
+    }
+
+    .camera {
+        margin-top: 50px;
+    }
+
+    .collections {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+
+    .see-more-button {
+        margin-left: 315px;
+        margin-top: 40px;
+        text-decoration: none;
+        font-size: 17px;
+        color: rgb(12, 113, 121);
+        margin-bottom: 40px;
+    }
+
+    .match {
+        width: 100%;
+    }
+
+    .racket {
+        margin-top: 200px;
+        transition: transform 0.3s ease-in;
+    }
+
+    .match:hover .racket {
+        transform: rotate(40deg);
+        transform-origin: bottom right;
+    }
+
+    .shuttle {
+        width: 200px;
+        position: relative;
+        bottom: 490px;
+        left: 260px;
+        transition: transform 1s ease-out 0.3s;
+    }
+
+    .match:hover .shuttle {
+        transform: translate(900px, -200px);
+    }
+
+
+}
+
+/* media queries end */
