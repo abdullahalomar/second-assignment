@@ -127,14 +127,30 @@ span {
 /* collection content end */
 
 /* extarnal content start */
-.bat {
-    margin-bottom: 90px;
-    transition: transform 1s;
+.match {
+    border: 2px solid rgb(230, 216, 216);
 }
 
-.bat:hover {
-    transform: rotate(-60deg);
-    transform-origin: top right;
+.racket {
+    margin-top: 200px;
+    transition: transform 0.3s ease-in;
+}
+
+.match:hover .racket {
+    transform: rotate(60deg);
+    transform-origin: bottom right;
+}
+
+.shuttle {
+    width: 200px;
+    position: relative;
+    bottom: 330px;
+    left: 30px;
+    transition: transform 1s ease-out 0.3s;
+}
+
+.match:hover .shuttle {
+    transform: translate(900px, -200px);
 }
 
 /* extarnal content end */
