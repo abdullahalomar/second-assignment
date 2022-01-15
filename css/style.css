@@ -190,7 +190,7 @@ span {
 
 /* mobile device */
 
-@media only screen and (max-width:688px) {
+@media only screen and (max-width: 688px) {
     .active {
         width: 100%;
         margin-left: -100px;
@@ -201,7 +201,6 @@ span {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
-
     }
 
     .topnav {
@@ -219,6 +218,8 @@ span {
 
     .button {
         margin-left: 60px;
+        font-size: 10px;
+        padding: 9px 16px;
     }
 
     .camera {
@@ -228,6 +229,10 @@ span {
     .collections {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .collection {
         flex-direction: column;
     }
 
@@ -266,7 +271,22 @@ span {
         transform: translate(900px, -200px);
     }
 
+    .foot {
+        background-color: rgb(41, 42, 43);
 
+    }
+}
+
+/* tablet device */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* media queries end */
